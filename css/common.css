@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #4E75FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color .5s;
+}
+
+button:hover {
+  background-color: #6C8CFF;
+}
+
+button.secondary {
+  background-color: #FF4E4E;
+  transition: background-color .5s;
+}
+
+button.secondary:hover {
+  background-color: #FF7070;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+form,
+.widget,
+ul {
+  margin: 24px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  border-radius: 4px;
+  height: 40px;
+  border: 1px solid #808080;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  width: 100%;
+  max-width: 360px;
+  padding: 8px 16px;
+  transition: border .5s;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover {
+  border-color: #000000;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus {
+  border-color: #000000;
+}
+
+#categories {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 392px;
+}
+
+#categories .item {
+  background-color: #F6F6FE;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+#categories .item h2 {
+  margin-bottom: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+
+#categories .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+}
+
+#categories .item ul li {
+  border-radius: 8px;
+  border: 1px solid #808080;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  padding: 8px 16px;
+}
+
+/* TASK 2 */
+.gallery {
+  display: flex;
+  gap: 24px;
+}
+
+.gallery img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* EO TASK 2*/
+
+/* TASK 3 */
+.form h1,
+#name-output {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+}
+
+/* EO TASK 3 */
+
+/* TASK 4 */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+  align-items: flex-start;
+}
+
+.login-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  color: #2E2F42;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.login-form button {
+  margin-top: 8px;
+}
+/* EO TASK 4 */
+
+
+/* TASK 6 */
+#controls,
+#boxes {
+  background-color: #F6F6FE;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#controls .amount {
+  text-align: center;
+  max-width: 150px;
+}
+
+#controls button {
+  width: 120px;
+}
+/* EO TASK 6 */

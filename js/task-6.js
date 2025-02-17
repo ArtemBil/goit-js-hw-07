@@ -20,6 +20,7 @@ function getRandomHexColor() {
 function createBoxes(amount) {
     const boxes = document.getElementById('boxes');
     const minDimension = 30;
+    const elements = [];
 
     boxes.innerHTML = '';
 
@@ -31,8 +32,10 @@ function createBoxes(amount) {
         element.style.height = `${maxDimension}px`;
         element.style.backgroundColor = getRandomHexColor();
 
-        boxes.appendChild(element);
+        elements.push(element);
     }
+
+    boxes.append(...elements);
 }
 
 /**
